@@ -4,6 +4,11 @@ project(OtoStream-Lite VERSION 0.1 LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+# Enable MOC and UI compilers
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTOUIC ON)
+set(CMAKE_AUTORCC ON)
+
 find_package(Qt6 COMPONENTS Core Gui Widgets REQUIRED)
 
 # Use the recommended Qt wrapper to create the executable

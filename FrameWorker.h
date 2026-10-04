@@ -8,6 +8,8 @@
 
 class FrameWorker : public QObject
 {
+    Q_OBJECT
+
 public:
     explicit FrameWorker(QObject *parent = nullptr);
     ~FrameWorker();
